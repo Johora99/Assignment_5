@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+     <!--======================= google font============================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- ========================daisyUI cdn=========================== -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- =====================tailwindcss cdn============================= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'charcoal':'rgb(17, 17, 17)',
+            'lime':'rgb(180, 244, 97)',
+            'alabaster':'rgb(249, 247, 243)',
+
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+
+ .lexend{
+  font-family: "Lexend", sans-serif;
+   }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen lexend">
+   <header id="stickyElement" class="sticky top-0 transition-all duration-300 ease-in-out z-50">
+        <div class="w-full bg-alabaster" id="stickyHeader">
+            <div class="container w-11/12 mx-auto flex flex-col lg:flex-row items-center justify-between pt-6 pb-12">
+                <button class="bg-lime py-3 px-8 text-charcoal text-xl font-semibold rounded-lg" id="homeBtn">Home</button>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h4 class="text-charcoal text-xl font-semibold my-6 md:my-0">Donate Bangladesh</h4>
+        
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <h4 class="text-charcoal text-opacity-[0.7] text-xl font-medium"><span id="mainAmount">5500</span>BDT</h4>
+                </div>
+            </div>
+        </div>
+    
+ </header>
+ <main class="flex-grow">
+    <section class="container w-11/12 mx-auto">
+        <h1 class="text-4xl font-bold text-charcoal my-10 font-sans flex items-center gap-2">Important FAQ <img src="./assets/icons8-question-mark.gif" alt=""></h1>
+        <div class="join join-vertical w-full mb-20">
+          <div class="collapse collapse-arrow join-item border-base-300 border p-5">
+            <input type="radio" name="my-accordion-4"/>
+            <div class="collapse-title text-xl font-medium text-charcoal">What is the Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+              <p class="text-charcoal text-opacity-[0.7] font-light">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document usually HTML as a tree of objects, allowing developers to interact with the content, structure, and styles of a web page</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border p-5">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-charcoal">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p class="text-charcoal text-opacity-[0.7] font-light">To select an element from the Document Object Model (DOM), I can use several methods provided by the JavaScript language. The most common methods include getElementById(), which selects an element based on its unique ID; getElementsByClassName(), which retrieves a live HTMLCollection of elements that share a specified class name; and getElementsByTagName(), which returns a live HTMLCollection of elements with a given tag name. Additionally, the querySelector() method allows for more flexibility, enabling you to select elements using CSS selectors, while querySelectorAll() returns a static NodeList of all matching elements. These methods are essential for manipulating the DOM, allowing developers to modify content, style, and structure dynamically in response to user interactions.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border p-5">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-charcoal">What is event delegation in the context of the DOM and why is it useful?</div>
+            <div class="collapse-content">
+              <p class="text-charcoal text-opacity-[0.7] font-light">Event delegation is a technique in JavaScript that leverages the concept of event bubbling to handle events at a higher level in the DOM rather than attaching event listeners to individual child elements. Instead of adding an event listener to each child element, I can add a single event listener to a parent element. When an event occurs on a child element, it bubbles up to the parent, where the event can be captured and handled.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border p-5">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium text-charcoal">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p class="text-charcoal text-opacity-[0.7] font-light">I can manipulate an element's attributes and styles in the DOM using various JavaScript methods and properties. To access an element's attributes, I can use getAttribute(attributeName) to retrieve the value of a specific attribute, such as the src of an image. If I want to change or add an attribute, I can use setAttribute(attributeName, value), which allows I to modify existing attributes or create new ones. To remove an attribute, the removeAttribute(attributeName) method is available.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+ </main>
+  <footer>
+    <div class="w-full bg-alabaster p-14">
+
+    </div>
+ </footer>
+<script src="./js/blog.js"></script>
+<script src="./js/utilities.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
