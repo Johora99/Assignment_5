@@ -46,7 +46,7 @@ donation('mainAmount', 'quotaDonation', 'quotaDonateAmount', 'quotaDonate', 'tit
 
 const blogBtn = document.getElementById('blogBtn');
 blogBtn.addEventListener('click',function(){
-    window.location.href = '../blog.html';
+    window.location.href = 'https://johora99.github.io/Assignment_5/';
 })
 
 
